@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My new website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>webpack starter</title>
+    <link rel="stylesheet" type="text/css" href="js/fontawesome/all.min.css" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <script type="text/javascript" src="scripts/index.js"></script>
-    <script type="text/javascript">
-      alert("I am from html");
-    </script>
+    <script type="text/javascript"></script>
   </head>
   <body>
-    <p>My new website without webpack</p>
-    <p>My new website without webpack</p>
-    <a href="pages/test.html" target="blanc">My new test pages</a>
-    
+    <section class="text-center">
+      <h1>Bulb is <span id="bulbStatus">OFF</span></h1>
+      <i class="fas fa-lightbulb"></i>
+      <section class="controlsContainer">
+        <br />
+        <input
+          type="text"
+          value="yellow"
+          aria-placeholder="Add a valid color"
+          name="color"
+        />
+        <br />
+        <button onclick="turnOn()">Turn on</button>
+        <button onclick="turnOff()">Turn off</button>
+      </section>
+    </section>
   </body>
 </html>
