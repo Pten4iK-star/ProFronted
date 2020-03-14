@@ -1,6 +1,10 @@
 function turnOn() {
+  let color = document.getElementsByName("color")[0].value;
+  if (!color) {
+    color = "#fbff00";
+  }
   const bulbElement = document.getElementsByClassName("fa-lightbulb")[0];
-  bulbElement.style.color = "#fbff00";
+  bulbElement.style.color = color;
   const bulbStatus = document.getElementById("bulbStatus");
   bulbStatus.innerHTML = "ON";
   bulbStatus.style.color = "#000000";
